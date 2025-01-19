@@ -108,3 +108,105 @@
 }
 
 
+
+
+</style>
+<style type="text/css" id="operaUserStyle"></style><style type="text/css"></style><link id="operaalerabat-link" rel="stylesheet" type="text/css" href="chrome-extension://eplcjggklbefnipglcfdfalbbjpmkbkl/content.css"></head>
+<body>
+
+<div class="header">
+  <a class="left">Tong Fung Chuar</a>
+  <div class="right">
+    <a href="https://tongfungchuar.github.io/info">Info /</a>  <a href="https://tongfungchuar.github.io/archive">Archive /</a>  <a href="https://tongfungchuar.github.io/Contact">Contact</a>
+  </div>
+</div>
+
+<div class="slideshow-container">
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade" style="opacity: 0;">
+    <img src="./Tong Fung Chuar_files/tetjjdfteriwjrhwwjzy.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade" style="opacity: 0;">
+    <img src="./Tong Fung Chuar_files/qgoccmashcy2kgsyrmui.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade" style="opacity: 0;">
+    <img src="./Tong Fung Chuar_files/xm0slgizay996kelizjg.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade" style="opacity: 1;">
+    <img src="./Tong Fung Chuar_files/oulzsjdytx6ttrnasbyy.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade" style="opacity: 0;">
+    <img src="./Tong Fung Chuar_files/gepofzh8lph3dntrq2us.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade" style="opacity: 0;">
+    <img src="./Tong Fung Chuar_files/nmi13mux6cb8axjdz3ak.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade" style="opacity: 0;">
+    <img src="./Tong Fung Chuar_files/tioqds0r3mjagwwv6jfr.jpg" style="width:100%">
+  </div>
+  
+  
+</div>
+
+<script>
+var slideIndex = 6; // Start with the first image
+
+function showSlides() {
+  var slides = document.getElementsByClassName("mySlides");
+  
+  // Increment the slide index for the next image, looping back after the last image
+  var nextIndex = (slideIndex + 1) % slides.length;
+
+  // Ensure all slides are transparent except for the next one, which needs to start fading in
+  for (var i = 0; i < slides.length; i++) {
+    if (i !== nextIndex) { // Avoid making the next slide transparent
+      slides[i].style.opacity = 0;
+    }
+  }
+
+  // Immediately start fading in the next slide
+  slides[nextIndex].style.opacity = 1;
+
+  // Update the slideIndex to the next slide
+  slideIndex = nextIndex;
+
+  // Schedule the next slide transition. The delay before this function is called again
+  // should be shorter than the visibility period to ensure overlapping.
+  // Since the fade-out transition takes 2 seconds, starting the next fade-in after 2 seconds
+  // ensures the slides overlap each other.
+  setTimeout(showSlides, 5000); // Continue with the next slide after 4 seconds
+}
+
+// Initial call to start the slideshow
+document.addEventListener('DOMContentLoaded', showSlides);
+</script>
+
+<script>
+    // Wait for the DOM to load
+    document.addEventListener('DOMContentLoaded', function() {
+      var navLinks = document.querySelectorAll('.header .right a'); // Selects all navigation links
+      
+      navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          // Remove 'active' class from all links
+          navLinks.forEach(function(lnk) {
+            lnk.classList.remove('active');
+          });
+          
+          // Add 'active' class to the clicked link
+          link.classList.add('active');
+        });
+      });
+    });
+    </script>
+
+
+
+
+</body></html>
