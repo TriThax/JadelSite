@@ -29,21 +29,22 @@
       }
 
       .content {
-          width: 22%; 
+          width: 50%; /* Adjusted for space allocation between text and video */
           margin: 0px;
           padding-top: 40px;
           padding-left: 30px;
+          display: inline-block; /* Allow content and video to align next to each other */
       }
 
       .footer {
-          position: fixed; 
-          bottom: 0; 
-          left: 0; 
-          width: 100%; 
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
           margin: 0px;
-          background-color: #222; 
-          color: #ffffff; 
-          text-align: left; 
+          background-color: #222;
+          color: #ffffff;
+          text-align: left;
           padding-left: 10px;
           font-size: 12px;
           z-index: 1000;
@@ -62,7 +63,7 @@
           cursor: pointer;
           border-radius: 0px;
           transition: background-color 0.3s;
-          font-size: 14px
+          font-size: 14px;
       }
 
       .cv-link:hover {
@@ -70,29 +71,18 @@
           text-decoration: underline;
       }
 
-      /* Style for the video container */
-      .video-container {
-          position: absolute; 
-          top: 0; 
-          right: 0; 
-          width: 65%; 
-          height: 100%; 
-      }
-
       video {
-          width: 100%; 
-          height: auto; 
-          display: block;
+          width: 45%; /* Video width adjusted */
+          height: auto;
+          display: inline-block;
+          vertical-align: top; /* Align video on the right */
       }
 
       @media only screen and (max-width: 700px) {
-          .content, .video-container {
-              width: 100%; 
-              position: relative; 
-          }
-
-          .video-container {
-              order: 2; 
+          .content, video {
+              width: 100%; /* Full width for smaller screens */
+              position: relative;
+              display: block; /* Stack the content and video vertically on small screens */
           }
       }
     </style>
@@ -114,13 +104,11 @@
         <p>The issues of spatial experience, animality, and the violence are currently the main subjects occurring in the creation process, aimed at exploring the possibility of cohabiting these themes in a relatively harmonious situation. They signify as metaphorical elements incorporated rather than literal representations of themselves.</p>
     </div>
 
-    <!-- Video container aligned to the right -->
-    <div class="video-container">
-        <video controls>
-            <source src="./DesignObjet/3567.MP4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+    <!-- Directly embedded video aligned to the right -->
+    <video controls>
+        <source src="./DesignObjet/3567.MP4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
     <div class="footer">
         <p>Visual identities designed by Inès Aourdache. Image courtesy of the designer and the artist, © 2024.</p>
