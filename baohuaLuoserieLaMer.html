@@ -16,7 +16,7 @@
         /* Main container layout with 3 columns */
         .main-container {
             display: flex;
-            height: 100vh; /* Full height */
+            height: 100vh;
         }
 
         /* First column: Text */
@@ -24,26 +24,26 @@
             width: 30%; /* 30% width for text column */
             padding: 20px;
             box-sizing: border-box;
+            overflow-y: auto;
         }
 
-        /* Second and third columns: Image sliders */
-        .slider-container {
-            width: 35%; /* 35% width for each of the image columns */
+        /* Second and third columns: Image containers */
+        .image-column {
+            width: 35%; /* 35% width for each image column */
             padding: 10px;
             box-sizing: border-box;
-            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap; /* To allow images to wrap into multiple rows */
+            justify-content: space-between;
         }
 
-        /* Style for the image slider */
-        .mySlides {
-            display: none;
-            position: relative;
-            width: 100%;
-            height: 100%;
+        .image-container {
+            width: 48%; /* Images take up roughly half the column width */
+            margin-bottom: 10px;
         }
 
-        .mySlides img {
-            width: 100%;
+        .image-container img {
+            width: 100%; /* Image takes up the entire container width */
             height: auto;
             display: block;
         }
@@ -66,7 +66,7 @@
                 flex-direction: column;
             }
 
-            .content, .slider-container {
+            .content, .image-column {
                 width: 100%;
             }
 
@@ -88,61 +88,61 @@
         <p>L'œuvre évoque un océan vivant et vibrant. Le bleu des ailes des magnifiques papillons du Brésil domine la composition. La lumière du soleil se pose sur la surface de l'eau, et dans les eaux peu profondes où les jeux de lumière et d'ombre se mêlent, on perçoit l'interaction entre la lumière et le mouvement des vagues, semblable à la danse discrète des micro-organismes au sein de l'océan. Les jeux de lumière et d'ombre respirent avec la toile, créant une harmonie fluide et vivante.</p>
     </div>
 
-    <!-- Second column for image slider 1 -->
-    <div class="slider-container">
-        <div class="mySlides fade">
+    <!-- Second column for image containers -->
+    <div class="image-column">
+        <div class="image-container">
             <img src="./DesignObjet/baohua/La Mer/2A6A3258.jpg" alt="Image 1">
         </div>
-        <div class="mySlides fade">
+        <div class="image-container">
             <img src="./DesignObjet/baohua/La Mer/2A6A3262.jpg" alt="Image 2">
         </div>
-        <div class="mySlides fade">
+        <div class="image-container">
             <img src="./DesignObjet/baohua/La Mer/2A6A3275.jpg" alt="Image 3">
         </div>
-        <div class="mySlides fade">
+        <div class="image-container">
             <img src="./DesignObjet/baohua/La Mer/2A6A3283.jpg" alt="Image 4">
         </div>
-        <div class="mySlides fade">
+        <div class="image-container">
             <img src="./DesignObjet/baohua/La Mer/2A6A3309.jpg" alt="Image 5">
         </div>
-        <div class="mySlides fade">
+        <div class="image-container">
             <img src="./DesignObjet/baohua/La Mer/2A6A3321.jpg" alt="Image 6">
         </div>
-        <div class="mySlides fade">
+        <div class="image-container">
             <img src="./DesignObjet/baohua/La Mer/2A6A3330.jpg" alt="Image 7">
         </div>
-        <div class="mySlides fade">
+        <div class="image-container">
             <img src="./DesignObjet/baohua/La Mer/2A6A3332.jpg" alt="Image 8">
-        </div>
-        <div class="mySlides fade">
-            <img src="./DesignObjet/baohua/La Mer/2A6A3335.jpg" alt="Image 9">
         </div>
     </div>
 
-    <!-- Third column for image slider 2 -->
-    <div class="slider-container">
-        <div class="mySlides fade">
+    <!-- Third column for image containers -->
+    <div class="image-column">
+        <div class="image-container">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3335.jpg" alt="Image 9">
+        </div>
+        <div class="image-container">
             <img src="./DesignObjet/baohua/La Mer/2A6A3339.jpg" alt="Image 10">
         </div>
-        <div class="mySlides fade">
+        <div class="image-container">
             <img src="./DesignObjet/baohua/La Mer/2A6A3482.jpg" alt="Image 11">
         </div>
-        <div class="mySlides fade">
+        <div class="image-container">
             <img src="./DesignObjet/baohua/La Mer/2A6A3524.jpg" alt="Image 12">
         </div>
-        <div class="mySlides fade">
+        <div class="image-container">
             <img src="./DesignObjet/baohua/La Mer/2A6A3540.jpg" alt="Image 13">
         </div>
-        <div class="mySlides fade">
+        <div class="image-container">
             <img src="./DesignObjet/baohua/La Mer/2A6A3546.jpg" alt="Image 14">
         </div>
-        <div class="mySlides fade">
+        <div class="image-container">
             <img src="./DesignObjet/baohua/La Mer/2A6A3560.jpg" alt="Image 15">
         </div>
-        <div class="mySlides fade">
+        <div class="image-container">
             <img src="./DesignObjet/baohua/La Mer/2A6A3589.jpg" alt="Image 16">
         </div>
-        <div class="mySlides fade">
+        <div class="image-container">
             <img src="./DesignObjet/baohua/La Mer/2A6A3627.jpg" alt="Image 17">
         </div>
     </div>
@@ -153,26 +153,6 @@
 <div class="footer">
     <p>Image courtesy of the artist, © 2024.</p>
 </div>
-
-<!-- JavaScript for image slider functionality -->
-<script>
-    let slideIndex = 0;
-
-    // Function to show slides in each container
-    function showSlides() {
-        let slides1 = document.getElementsByClassName("mySlides");
-        for (let i = 0; i < slides1.length; i++) {
-            slides1[i].style.display = "none";
-        }
-
-        slideIndex++;
-        if (slideIndex > slides1.length) { slideIndex = 1; }
-        slides1[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
-
-    showSlides(); // Start the slider function
-</script>
 
 </body>
 </html>
