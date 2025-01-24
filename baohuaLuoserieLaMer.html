@@ -19,7 +19,7 @@
             height: 100vh;
         }
 
-        /* First column: Text */
+        /* First column for text */
         .content {
             width: 30%; /* 30% width for text column */
             padding: 20px;
@@ -33,12 +33,12 @@
             padding: 10px;
             box-sizing: border-box;
             display: flex;
-            flex-wrap: wrap; /* To allow images to wrap into multiple rows */
-            justify-content: space-between;
+            flex-direction: column; /* Stack images vertically */
+            justify-content: flex-start;
         }
 
         .image-container {
-            width: 48%; /* Images take up roughly half the column width */
+            width: 100%; /* Images take up full width of the column */
             margin-bottom: 10px;
         }
 
