@@ -10,39 +10,45 @@
             padding: 0;
             background-color: rgb(255, 255, 255);
             height: 100%;
+            font-family: Helvetica, sans-serif;
         }
 
+        /* Main container layout with 3 columns */
         .main-container {
             display: flex;
-            height: 100vh; /* Full viewport height */
+            height: 100vh; /* Full height */
         }
 
-        /* Colonne de texte */
+        /* First column: Text */
         .content {
-            width: 30%; /* Prend 30% de la largeur */
+            width: 30%; /* 30% width for text column */
             padding: 20px;
             box-sizing: border-box;
         }
 
-        /* Colonne d'images */
-        .image-columns {
-            display: flex;
-            flex: 1; /* Les 2 colonnes d'images prennent le reste de l'espace */
-            flex-wrap: wrap;
+        /* Second and third columns: Image sliders */
+        .slider-container {
+            width: 35%; /* 35% width for each of the image columns */
             padding: 10px;
+            box-sizing: border-box;
+            overflow: hidden;
         }
 
-        .image-column {
-            width: 50%; /* Chaque colonne prend 50% de la largeur de l'espace restant */
-            padding: 5px;
+        /* Style for the image slider */
+        .mySlides {
+            display: none;
+            position: relative;
+            width: 100%;
+            height: 100%;
         }
 
-        .image-column img {
+        .mySlides img {
             width: 100%;
             height: auto;
-            margin-bottom: 10px;
+            display: block;
         }
 
+        /* Footer styling */
         .footer {
             position: fixed;
             bottom: 0;
@@ -53,87 +59,120 @@
             text-align: left;
             padding: 10px;
         }
+
+        /* Simple responsive design */
+        @media screen and (max-width: 700px) {
+            .main-container {
+                flex-direction: column;
+            }
+
+            .content, .slider-container {
+                width: 100%;
+            }
+
+            .footer {
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 <body>
 
+<!-- Main container with 3 columns -->
 <div class="main-container">
-    <!-- Colonne 1 : Texte -->
+
+    <!-- First column for text -->
     <div class="content">
         <h1>Baohua Luo</h1>
         <p class="series-description">Serie La Mer</p>
         <p>L'œuvre évoque un océan vivant et vibrant. Le bleu des ailes des magnifiques papillons du Brésil domine la composition. La lumière du soleil se pose sur la surface de l'eau, et dans les eaux peu profondes où les jeux de lumière et d'ombre se mêlent, on perçoit l'interaction entre la lumière et le mouvement des vagues, semblable à la danse discrète des micro-organismes au sein de l'océan. Les jeux de lumière et d'ombre respirent avec la toile, créant une harmonie fluide et vivante.</p>
     </div>
 
-    <!-- Colonne 2 et 3 : Images -->
-    <div class="image-columns">
-        <!-- Colonne 2 -->
-        <div class="image-column">
+    <!-- Second column for image slider 1 -->
+    <div class="slider-container">
+        <div class="mySlides fade">
             <img src="./DesignObjet/baohua/La Mer/2A6A3258.jpg" alt="Image 1">
+        </div>
+        <div class="mySlides fade">
             <img src="./DesignObjet/baohua/La Mer/2A6A3262.jpg" alt="Image 2">
         </div>
-        <!-- Colonne 3 -->
-        <div class="image-column">
+        <div class="mySlides fade">
             <img src="./DesignObjet/baohua/La Mer/2A6A3275.jpg" alt="Image 3">
+        </div>
+        <div class="mySlides fade">
             <img src="./DesignObjet/baohua/La Mer/2A6A3283.jpg" alt="Image 4">
         </div>
-    </div>
-</div>
-
-<!-- Colonne 2 -->
-<div class="main-container">
-    <div class="image-columns">
-        <div class="image-column">
+        <div class="mySlides fade">
             <img src="./DesignObjet/baohua/La Mer/2A6A3309.jpg" alt="Image 5">
+        </div>
+        <div class="mySlides fade">
             <img src="./DesignObjet/baohua/La Mer/2A6A3321.jpg" alt="Image 6">
         </div>
-        <div class="image-column">
+        <div class="mySlides fade">
             <img src="./DesignObjet/baohua/La Mer/2A6A3330.jpg" alt="Image 7">
+        </div>
+        <div class="mySlides fade">
             <img src="./DesignObjet/baohua/La Mer/2A6A3332.jpg" alt="Image 8">
         </div>
-    </div>
-</div>
-
-<!-- Colonne 3 -->
-<div class="main-container">
-    <div class="image-columns">
-        <div class="image-column">
+        <div class="mySlides fade">
             <img src="./DesignObjet/baohua/La Mer/2A6A3335.jpg" alt="Image 9">
+        </div>
+    </div>
+
+    <!-- Third column for image slider 2 -->
+    <div class="slider-container">
+        <div class="mySlides fade">
             <img src="./DesignObjet/baohua/La Mer/2A6A3339.jpg" alt="Image 10">
         </div>
-        <div class="image-column">
+        <div class="mySlides fade">
             <img src="./DesignObjet/baohua/La Mer/2A6A3482.jpg" alt="Image 11">
+        </div>
+        <div class="mySlides fade">
             <img src="./DesignObjet/baohua/La Mer/2A6A3524.jpg" alt="Image 12">
         </div>
-    </div>
-</div>
-
-<!-- Colonne 4 -->
-<div class="main-container">
-    <div class="image-columns">
-        <div class="image-column">
+        <div class="mySlides fade">
             <img src="./DesignObjet/baohua/La Mer/2A6A3540.jpg" alt="Image 13">
+        </div>
+        <div class="mySlides fade">
             <img src="./DesignObjet/baohua/La Mer/2A6A3546.jpg" alt="Image 14">
         </div>
-        <div class="image-column">
+        <div class="mySlides fade">
             <img src="./DesignObjet/baohua/La Mer/2A6A3560.jpg" alt="Image 15">
+        </div>
+        <div class="mySlides fade">
             <img src="./DesignObjet/baohua/La Mer/2A6A3589.jpg" alt="Image 16">
         </div>
-    </div>
-</div>
-
-<!-- Colonne 5 -->
-<div class="main-container">
-    <div class="image-columns">
-        <div class="image-column">
+        <div class="mySlides fade">
             <img src="./DesignObjet/baohua/La Mer/2A6A3627.jpg" alt="Image 17">
         </div>
     </div>
+
 </div>
 
+<!-- Footer -->
 <div class="footer">
     <p>Image courtesy of the artist, © 2024.</p>
 </div>
+
+<!-- JavaScript for image slider functionality -->
+<script>
+    let slideIndex = 0;
+
+    // Function to show slides in each container
+    function showSlides() {
+        let slides1 = document.getElementsByClassName("mySlides");
+        for (let i = 0; i < slides1.length; i++) {
+            slides1[i].style.display = "none";
+        }
+
+        slideIndex++;
+        if (slideIndex > slides1.length) { slideIndex = 1; }
+        slides1[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+    showSlides(); // Start the slider function
+</script>
 
 </body>
 </html>
