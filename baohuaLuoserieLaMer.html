@@ -1,388 +1,139 @@
 <!DOCTYPE html>
-<!-- saved from url=(0049)https://tongfungchuar.github.io/Seductionofhunger -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie Jadel</title>
     <style>
-      body, html {
-        margin: 0;
-        padding: 0;
-        background-color: rgb(255, 255, 255);
-        height: 100%;
-      }
-      .header {
-        position: fixed;
-        width: 100%;
-        color: black;
-        background: transparent;
-        z-index: 1000;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-        box-sizing: border-box;
-      }
-      .header a {
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-        font-family: Helvetica , sans-serif;
-      }
-         /* Navigation link styles */
-    .header .right a {
-      cursor: pointer;
-      text-decoration: none; /* Removes underline by default */
-      color: rgb(0, 0, 0); /* Set the text color */
-      padding: 5px; /* Adds some padding around the links */
-    }
-    
-    /* Hover effect */
-    .header .right a:hover {
-      text-decoration: underline; /* Underline on hover */
-    }
-    
-    /* Active (clicked) link style */
-    .active {
-      text-decoration: underline; /* Keeps the underline for active link */
-    }
-
-    .header a.left:hover {
-  text-decoration: underline; /* Underline the text */
-  color: #000000; /* Change color on hover - choose a color that fits your design */
-}
-    
-    /* Active (clicked) link style */
-    .active {
-      text-decoration: underline; /* Keeps the underline for active link */
-    }
-      @media screen and (max-width: 1050px) {
-      .header .left , .header .right a {
-        font-size: 15px; /* Larger font for better readability on small screens */
-      }
-    
-      .mySlides img {
-        width: auto;
-        height: 100vh;
-        max-width: none;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        /* Ensure the image is centered and does not stretch */
-        transform: translate(-50%, -50%);
-        object-fit: cover;
-      }
-    
-      .slideshow-container {
-        overflow: hidden; /* Hide the parts of the images that do not fit */
-      }
-    
-      /* Adjust the header so it takes up less space and doesn't overlap the image too much */
-      .header {
-        background: rgba(255, 255, 255, 0); /* Slightly transparent background for legibility */
-        padding: 8px;
-      }
-    }
-    
-    @media screen and (orientation: landscape) {
-      .mySlides img {
-        /* This will make sure that the image fits the screen's height */
-        width: auto;
-        height: 100vh;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        /* Center the image and maintain aspect ratio without stretching */
-        transform: translate(-50%, -50%);
-        object-fit: cover;
-      }
-    }
-    .mySlides {
-      display: none;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
-    
-    
-    
-    .mySlides {
-      display: block; /* Ensure images are initially displayed */
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0; /* Start images fully transparent */
-      transition: opacity 2s ease-in-out; /* Smooth transition for fade in and out */
-      
-      
-    }
-    
-    .header .left .arrow {
-  position: relative;
-  text-decoration: none;
-  font-size: large;
-}
-    
-    
-body, html {
-    
-    margin: 0;
-    padding: 0;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    height: 100%;
-    font-family: Helvetica, sans-serif; /* or any other font you're using */
-}
-
-
-
-.content {
-    width: 22%; /* Adjust the width as needed */
-    margin: 0px ; /* Center the content */
-    padding-top: 40px;
-    padding-left: 30px;
-}
-
-.content h1, .content h2, .content p {
-    font-weight: normal; /* This will make the text normal (not bold) */
-}
-
-.content h1 {
-    font-size: 16px; /* Adjusted font size for main heading */
-    padding-bottom: 0.5em; /* Space below the heading */
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-family: Helvetica, sans-serif;
-    margin-bottom: 0; /* Removes bottom margin */
-}
-
-/* Add a new rule for the 'Photography ongoing series (2020- )' paragraph */
-.content .series-description {
-    font-size: 12px; /* Set the font size to 12px */
-    line-height: 1; /* Adjust line height for readability */
-    margin-top: 0; /* Adjust top margin to reduce the gap */
-    margin-bottom: 1em; /* Space after the paragraph */
-    text-align: left;
-    font-style: italic;
-}
-.content h2 {
-    font-size: 16; /* Slightly smaller font size for section headings */
-    padding-top: 0; /* Space above section headings */
-}
-
-.content p {
-    font-size: 12px; /* Standard text size */
-    line-height: 1.5; /* Adjust line height for readability */
-    margin-bottom: 1em; /* Space after each paragraph */
-    text-align: left;
-}
-
-
-.fixed-space {
-  display: inline-block;
-  width: 50px; /* Set the width to the space size you want */
-}
-
-.cv-link {
-    color: rgb(0, 0, 0); /* Sets the link color to white */
-    
-    padding: 8px 0px; /* Adds some padding around the link text */
-    text-decoration: none; /* Removes the default underline */
-    font-weight: normal; /* Makes the link text bold */
-    display: inline-block; /* Allows you to add padding and center the link */
-    margin-top: 0px; /* Adds space between the link and the preceding content */
-    cursor: pointer; /* Changes the mouse cursor to indicate the link is clickable */
-    border-radius: 0px; /* Optional: Rounds the corners of the link background */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-    font-size: 14px
-}
-
-.cv-link:hover {
-    background-color: #33333300; /* Darkens the background slightly on hover */
-    text-decoration: underline; /* Adds an underline on hover */
-}
-
-@media only screen and (max-width: 700px) {
-    
-    
-
-    .content {
-        width: 100%; /* Full width on smaller screens */
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 40px;
-        padding-bottom: 60px; /* Adjust padding to be smaller on mobile */
-        box-sizing: border-box; /* Include padding in width calculation */
-    }
-
-    .cv-link {
-        /* Adjust CV link padding and font size for smaller screens */
-        padding: 8px;
-        font-size: 16px; /* Larger font size for better readability */
-        display: block; /* Block display to take full width */
-        text-align: left; /* Center the text if the link is now a block */
-        margin: 20px auto; /* Adds vertical margin and centers horizontally */
-    }
-
-    /* You can add more adjustments for other elements as needed */
-    .content h1 {
-    font-size: 24px; /* Adjust as necessary */
-    /* ... other styles ... */
-}
-
-.content h2 {
-    font-size: 20px; /* Adjust as necessary */
-    /* ... other styles ... */
-}
-
-.content p {
-    font-size: 16px; /* Adjust as necessary */
-    /* ... other styles ... */
-}
-
-.content .series-description {
-    font-size: 14px; /* Set the font size to 12px */
-    font-style: italic;
-    
-}
-/* Styles for mobile phones */
-@media only screen and (max-width: 600px) {
-    .content h1 {
-        font-size: 18px; /* Smaller font size for mobile screens */
-        /* ... other styles ... */
-    }
-
-    .content h2 {
-        font-size: 16px; /* Smaller font size for mobile screens */
-        /* ... other styles ... */
-    }
-
-    .content p {
-        font-size: 14px; /* Smaller font size for mobile screens */
-        /* ... other styles ... */
-    }
-
-    /* Adjust any other text elements you may have */
-}
-
-}
-
-.image-container {
-            position: absolute; /* Make it position absolutely within the body */
-            top: 0; /* Align it to the top */
-            right: 0; /* Align it to the right */
-            width: 40%; /* Take up 65% of the width */
-            height: 100%; /* Full height to match the content area */
-            
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(255, 255, 255);
+            height: 100%;
         }
 
-        /* Style for the images inside the container */
-        .image-container img {
-            width: 100%; /* Make images take up 100% width of their container */
-            height: auto; /* Keep their aspect ratio */
-            display: block; /* Stack them on top of each other */
-            margin-bottom: 60px; /* Add some space between the images */
+        .main-container {
+            display: flex;
+            height: 100vh; /* Full viewport height */
         }
 
-        @media only screen and (max-width: 700px) {
-            .content, .image-container {
-                width: 100%; /* Full width for smaller screens */
-                position: relative; /* Position relative for the mobile layout */
-            }
-            .image-container {
-                order: 2; /* Ensure images come after the text on mobile */
-            }
+        /* Colonne de texte */
+        .content {
+            width: 30%; /* Prend 30% de la largeur */
+            padding: 20px;
+            box-sizing: border-box;
         }
+
+        /* Colonne d'images */
+        .image-columns {
+            display: flex;
+            flex: 1; /* Les 2 colonnes d'images prennent le reste de l'espace */
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        .image-column {
+            width: 50%; /* Chaque colonne prend 50% de la largeur de l'espace restant */
+            padding: 5px;
+        }
+
+        .image-column img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
         .footer {
-    position: fixed; /* Fixed positioning for the footer */
-    bottom: 0; /* Align it to the bottom */
-    left: 0; /* Align it to the left */
-    width: 100%; /* Full width */
-    margin: 0px ; /* Center the content */
-    background-color: #222; /* Footer background */
-    color: #ffffff; /* White text */
-    text-align: left; /* Align text to the right */
-    
-    padding-left: 10px;
-
-    font-size: 12px; /* Smaller text */
-    z-index: 1000; /* Ensure footer stays above other content */
-    margin: 1;
-    line-height: 1; /* Compact line spacing */
-    display: flex;
-        justify-content: space-between;
-        box-sizing: border-box;
-}
- 
-@media only screen and (max-width: 600px) {
-    .footer {
-      width: 100%; /* Full width on smaller screens */
-        padding-left: 15px;
-        padding-right: 15px;
-        box-sizing: border-box; /* Include padding in width calculation */
-        font-size: 6px; /* Smaller text size */
-        box-sizing: border-box; /* Include padding in width calculation */
-    }
-}
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #222;
+            color: #ffffff;
+            text-align: left;
+            padding: 10px;
+        }
     </style>
-    <style type="text/css" id="operaUserStyle"></style><style type="text/css"></style><link id="operaalerabat-link" rel="stylesheet" type="text/css" href="chrome-extension://eplcjggklbefnipglcfdfalbbjpmkbkl/content.css"></head>
-    <body>
-    
-        <div class="header">
-            <!-- Use a span inside the link for the arrow to apply styles specifically to it -->
-            <a href="archive.html" class="left"><span class="arrow">⟵</span></a>
-            <div class="right">
-                <a href="index.html">Info /</a>  <a href="archive.html">Archive /</a>  <a href="contact.html">Contact</a>
-              </div>
-          </div>
-          
+</head>
+<body>
 
-        
-        <div class="content">
-            <h1>Baohua Luo</h1>
+<div class="main-container">
+    <!-- Colonne 1 : Texte -->
+    <div class="content">
+        <h1>Baohua Luo</h1>
+        <p class="series-description">Serie La Mer</p>
+        <p>L'œuvre évoque un océan vivant et vibrant. Le bleu des ailes des magnifiques papillons du Brésil domine la composition. La lumière du soleil se pose sur la surface de l'eau, et dans les eaux peu profondes où les jeux de lumière et d'ombre se mêlent, on perçoit l'interaction entre la lumière et le mouvement des vagues, semblable à la danse discrète des micro-organismes au sein de l'océan. Les jeux de lumière et d'ombre respirent avec la toile, créant une harmonie fluide et vivante.</p>
+    </div>
 
-            <p class="series-description">Serie La Mer</p>
-    <h1></h1>
-    
-    <h1></h1>
-    <p>L'œuvre évoque un océan vivant et vibrant. Le bleu des ailes des magnifiques papillons du Brésil domine la composition. La lumière du soleil se pose sur la surface de l'eau, et dans les eaux peu profondes où les jeux de lumière et d'ombre se mêlent, on perçoit l'interaction entre la lumière et le mouvement des vagues, semblable à la danse discrète des micro-organismes au sein de l'océan. Les jeux de lumière et d'ombre respirent avec la toile, créant une harmonie fluide et vivante.</p>
-
+    <!-- Colonne 2 et 3 : Images -->
+    <div class="image-columns">
+        <!-- Colonne 2 -->
+        <div class="image-column">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3258.jpg" alt="Image 1">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3262.jpg" alt="Image 2">
         </div>
-
-
-        <div class="image-container">
-            <!-- Add your images here -->
-        
-
-        <img src="./DesignObjet/baohua/La Mer/2A6A3258.jpg">
-        <img src="./DesignObjet/baohua/La Mer/2A6A3262.jpg">
-        <img src="./DesignObjet/baohua/La Mer/2A6A3275.jpg">
-        <img src="./DesignObjet/baohua/La Mer/2A6A3283.jpg">
-        
-        <img src="./DesignObjet/baohua/La Mer/2A6A3309.jpg">
-        <img src="./DesignObjet/baohua/La Mer/2A6A3321.jpg">
-        <img src="./DesignObjet/baohua/La Mer/2A6A3330.jpg">
-        <img src="./DesignObjet/baohua/La Mer/2A6A3332.jpg">
-        <img src="./DesignObjet/baohua/La Mer/2A6A3335.jpg">
-          
-        <img src="./DesignObjet/baohua/La Mer/2A6A3339.jpg">
-        <img src="./DesignObjet/baohua/La Mer/2A6A3482.jpg">
-        <img src="./DesignObjet/baohua/La Mer/2A6A3524.jpg">
-        <img src="./DesignObjet/baohua/La Mer/2A6A3540.jpg">
-        <img src="./DesignObjet/baohua/La Mer/2A6A3546.jpg">
-        
-        <img src="./DesignObjet/baohua/La Mer/2A6A3560.jpg">
-        <img src="./DesignObjet/baohua/La Mer/2A6A3589.jpg">
-        <img src="./DesignObjet/baohua/La Mer/2A6A3627.jpg">
-
-
-
-
-            <!-- Add more images as needed -->
+        <!-- Colonne 3 -->
+        <div class="image-column">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3275.jpg" alt="Image 3">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3283.jpg" alt="Image 4">
         </div>
-        <div class="footer">
-          <p>Image courtesy of the artist, © 2024.       </p>
-      
-              </div>
+    </div>
+</div>
 
-</body></html>
+<!-- Colonne 2 -->
+<div class="main-container">
+    <div class="image-columns">
+        <div class="image-column">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3309.jpg" alt="Image 5">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3321.jpg" alt="Image 6">
+        </div>
+        <div class="image-column">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3330.jpg" alt="Image 7">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3332.jpg" alt="Image 8">
+        </div>
+    </div>
+</div>
+
+<!-- Colonne 3 -->
+<div class="main-container">
+    <div class="image-columns">
+        <div class="image-column">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3335.jpg" alt="Image 9">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3339.jpg" alt="Image 10">
+        </div>
+        <div class="image-column">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3482.jpg" alt="Image 11">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3524.jpg" alt="Image 12">
+        </div>
+    </div>
+</div>
+
+<!-- Colonne 4 -->
+<div class="main-container">
+    <div class="image-columns">
+        <div class="image-column">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3540.jpg" alt="Image 13">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3546.jpg" alt="Image 14">
+        </div>
+        <div class="image-column">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3560.jpg" alt="Image 15">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3589.jpg" alt="Image 16">
+        </div>
+    </div>
+</div>
+
+<!-- Colonne 5 -->
+<div class="main-container">
+    <div class="image-columns">
+        <div class="image-column">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3627.jpg" alt="Image 17">
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>Image courtesy of the artist, © 2024.</p>
+</div>
+
+</body>
+</html>
