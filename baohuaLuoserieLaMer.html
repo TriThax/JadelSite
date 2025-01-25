@@ -54,6 +54,15 @@
             display: block;
         }
 
+        /* Column 1 - Adjust first image and others */
+        .image-column:nth-child(1) .image-container:nth-child(1) {
+            margin-top: 300px; /* First image in column 1 */
+        }
+
+        .image-column:nth-child(1) .image-container:nth-child(n+2) {
+            margin-top: 120px; /* Other images in column 1 */
+        }
+
         /* Column 2 - Apply margin top adjustments */
         .image-column:nth-child(2) .image-container:nth-child(1) {
             margin-top: 300px; /* First image in column 2 */
@@ -63,9 +72,14 @@
             margin-top: 150px; /* All other images in column 2 */
         }
 
-        /* Column 2 - Last image will be the longest (adjust margin-top to push it further down) */
-        .image-column:nth-child(2) .image-container:nth-child(8) {
-            margin-top: 1000px; /* Move the last image much lower */
+        /* Column 3 - Last image much lower (500px down) */
+        .image-column:nth-child(3) .image-container:nth-child(9) {
+            margin-top: 500px; /* Move the last image much lower */
+        }
+
+        /* Column 3 - Make image 11 bigger */
+        .image-column:nth-child(3) .image-container:nth-child(3) img {
+            width: 120%; /* Image 11 is 20% larger */
         }
 
         /* Column 1 image sizes */
