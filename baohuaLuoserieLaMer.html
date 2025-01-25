@@ -54,47 +54,48 @@
             display: block;
         }
 
-        /* Adjust specific images as per instructions */
-
-        /* Lower the first image in column 2 by 1000px */
+        /* Move the first image in column 2 lower by 1000px */
         .image-column:nth-child(2) .image-container:nth-child(1) {
-            margin-top: 1000px; /* Lower the first image in the second column */
+            margin-top: 1000px; /* Lower the first image by 1000px */
         }
 
-        /* Increase the size of image 11 by 200% */
+        /* Move image 11 (column 3) 200% larger */
         .image-column:nth-child(3) .image-container:nth-child(11) img {
-            width: 200%; /* 200% larger */
-            height: auto; /* Maintain the aspect ratio */
+            width: 200%; /* Image 11 200% larger */
+            height: auto; /* Maintain aspect ratio */
         }
 
-        /* Lower the last image (image 17) in column 3 by 10000px */
+        /* Move the last image (image 17) in column 3 much lower by 10,000px */
         .image-column:nth-child(3) .image-container:nth-child(17) {
-            margin-top: 10000px; /* Lower image 17 by 10000px */
+            margin-top: 10000px; /* Lower image 17 by 10,000px */
         }
 
-        /* Vary the image size from 50% to 100% */
+        /* Apply specific margin changes to images that need size variation */
+        /* Image 1 in column 1, smaller images */
         .image-column:nth-child(1) .image-container:nth-child(odd) img {
-            width: 50%; /* Smaller images */
+            width: 50%; /* Smaller images in the first column */
         }
 
         .image-column:nth-child(1) .image-container:nth-child(even) img {
             width: 100%; /* Larger images */
         }
 
+        /* Column 2, smaller and larger images */
         .image-column:nth-child(2) .image-container:nth-child(odd) img {
-            width: 60%; /* Smaller images in the second column */
+            width: 60%; /* Smaller images in column 2 */
         }
 
         .image-column:nth-child(2) .image-container:nth-child(even) img {
-            width: 80%; /* Larger images in the second column */
+            width: 80%; /* Larger images */
         }
 
+        /* Column 3, varied image sizes */
         .image-column:nth-child(3) .image-container:nth-child(odd) img {
-            width: 70%; /* Larger images in the third column */
+            width: 70%; /* Larger images */
         }
 
         .image-column:nth-child(3) .image-container:nth-child(even) img {
-            width: 50%; /* Smaller images in the third column */
+            width: 50%; /* Smaller images */
         }
 
         /* Apply staggered effect for images in columns */
