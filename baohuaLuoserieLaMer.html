@@ -56,16 +56,16 @@
 
         /* Column 2 - Apply margin top adjustments */
         .image-column:nth-child(2) .image-container:nth-child(1) {
-            margin-top: 1000px; /* First image in column 2 */
+            margin-top: 300px; /* First image in column 2 */
         }
 
-        .image-column:nth-child(2) .image-container:nth-child(n+2) {
-            margin-top: 400px; /* All other images in column 2 */
+        .image-column:nth-child(2) .image-container:nth-child(n+2):nth-child(-n+7) {
+            margin-top: 150px; /* All other images in column 2 */
         }
 
-        /* Column 3 - Last image lowered by 300px */
-        .image-column:nth-child(3) .image-container:nth-child(17) {
-            margin-top: 300px; /* Move image 17 by 300px lower */
+        /* Column 2 - Last image will be the longest (adjust margin-top to push it further down) */
+        .image-column:nth-child(2) .image-container:nth-child(8) {
+            margin-top: 1000px; /* Move the last image much lower */
         }
 
         /* Column 1 image sizes */
