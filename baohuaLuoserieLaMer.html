@@ -65,11 +65,22 @@
 
         /* Column 2 - Adjust margin top for images */
         .image-column:nth-child(2) .image-container:nth-child(1) {
-            margin-top: 150px; /* First image in column 2 */
+            margin-top: 300px; /* First image in column 2 */
+            margin-left: 20%;  /* Push it more to the right */
         }
 
-        .image-column:nth-child(2) .image-container:nth-child(n+2) {
-            margin-top: 20px; /* All other images in column 2 */
+        .image-column:nth-child(2) .image-container:nth-child(2) {
+            margin-top: 70px;  /* Image 2 in column 2 */
+        }
+
+        .image-column:nth-child(2) .image-container:nth-child(5) {
+            margin-top: 80px;   /* Smaller margin-top for Image 5 */
+            margin-left: 15%;   /* Push Image 5 to the right */
+        }
+
+        /* Column 2 - Adjust other images */
+        .image-column:nth-child(2) .image-container:nth-child(n+3):nth-child(-n+4) {
+            margin-top: 100px;
         }
 
         /* Column 3 - Last image much lower (500px down) */
