@@ -54,9 +54,9 @@
             display: block;
         }
 
-        /* Change the margin-top for the first image in column 2 */
-        .image-column:nth-child(2) .image-container:nth-child(1) {
-            margin-top: 1000px; /* Lower the first image in column 2 by 1000px */
+        /* Apply margin-top of 10000px to all images in column 2 */
+        .image-column:nth-child(2) .image-container {
+            margin-top: 10000px; /* Push all images in column 2 down */
         }
 
         /* Make image 11 (in column 3) 200% larger */
@@ -65,55 +65,36 @@
             height: auto; /* Maintain aspect ratio */
         }
 
-        /* Lower image 17 in column 3 by 10,000px */
+        /* Move image 17 (in column 3) much lower by 10000px */
         .image-column:nth-child(3) .image-container:nth-child(17) {
-            margin-top: 10000px; /* Lower image 17 by 10,000px */
+            margin-top: 10000px; /* Move image 17 by 10000px lower */
         }
 
-        /* Apply specific margin changes to images that need size variation */
-        /* Image 1 in column 1, smaller images */
+        /* Column 1 image sizes */
         .image-column:nth-child(1) .image-container:nth-child(odd) img {
-            width: 50%; /* Smaller images in the first column */
+            width: 50%;
         }
 
         .image-column:nth-child(1) .image-container:nth-child(even) img {
-            width: 100%; /* Larger images */
+            width: 100%;
         }
 
-        /* Column 2, smaller and larger images */
+        /* Column 2 image sizes */
         .image-column:nth-child(2) .image-container:nth-child(odd) img {
-            width: 60%; /* Smaller images in column 2 */
+            width: 60%;
         }
 
         .image-column:nth-child(2) .image-container:nth-child(even) img {
-            width: 80%; /* Larger images */
+            width: 80%;
         }
 
-        /* Column 3, varied image sizes */
+        /* Column 3 image sizes */
         .image-column:nth-child(3) .image-container:nth-child(odd) img {
-            width: 70%; /* Larger images */
+            width: 70%;
         }
 
         .image-column:nth-child(3) .image-container:nth-child(even) img {
-            width: 50%; /* Smaller images */
-        }
-
-        /* Apply staggered effect for images in columns */
-        .image-column:nth-child(2) .image-container:nth-child(odd) {
-            margin-top: 30px; /* Move odd images down */
-        }
-
-        .image-column:nth-child(3) .image-container:nth-child(even) {
-            margin-top: 30px; /* Move even images down */
-        }
-
-        /* Apply even more stagger for alternate images in both columns */
-        .image-column:nth-child(2) .image-container:nth-child(odd):nth-of-type(odd) {
-            margin-left: 30px; /* Shift odd images to the right */
-        }
-
-        .image-column:nth-child(3) .image-container:nth-child(even):nth-of-type(odd) {
-            margin-left: 30px; /* Shift even images to the right */
+            width: 50%;
         }
 
         /* Footer styling */
