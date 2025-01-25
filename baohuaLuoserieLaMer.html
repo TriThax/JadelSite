@@ -65,11 +65,11 @@
 
         /* Column 2 - Apply margin top adjustments */
         .image-column:nth-child(2) .image-container:nth-child(1) {
-            margin-top: 300px; /* First image in column 2 */
+            margin-top: 0px; /* No margin top for the first image in column 2 */
         }
 
-        .image-column:nth-child(2) .image-container:nth-child(n+2):nth-child(-n+7) {
-            margin-top: 150px; /* All other images in column 2 */
+        .image-column:nth-child(2) .image-container:nth-child(n+2) {
+            margin-top: 100px; /* All other images in column 2 have 100px margin-top */
         }
 
         /* Column 3 - Last image much lower (500px down) */
