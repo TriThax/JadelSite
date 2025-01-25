@@ -44,7 +44,7 @@
 
         .image-container {
             width: 100%; /* Images take up full width of the column */
-            margin-bottom: 150px; /* Increased space between images by 20px more */
+            margin-bottom: 150px; /* Increased space between images */
             transition: all 0.3s ease; /* Smooth transition for any positioning changes */
         }
 
@@ -52,6 +52,23 @@
             width: 100%; /* Image takes up the entire container width */
             height: auto; /* Maintains aspect ratio */
             display: block;
+        }
+
+        /* Adjust size of some images for contrast */
+        .image-column:nth-child(2) .image-container:nth-child(odd) img {
+            height: 70%; /* Smaller images in the second column */
+        }
+
+        .image-column:nth-child(2) .image-container:nth-child(even) img {
+            height: 90%; /* Larger images in the second column */
+        }
+
+        .image-column:nth-child(3) .image-container:nth-child(odd) img {
+            height: 85%; /* Larger images in the third column */
+        }
+
+        .image-column:nth-child(3) .image-container:nth-child(even) img {
+            height: 75%; /* Smaller images in the third column */
         }
 
         /* Apply staggered effect for images in columns */
