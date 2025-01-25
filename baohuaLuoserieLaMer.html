@@ -52,10 +52,19 @@
 
         /* Apply staggered effect for images in columns */
         .image-column:nth-child(2) .image-container:nth-child(odd) {
-            margin-left: 30px; /* Shift odd images to the right */
+            margin-top: 30px; /* Move odd images down */
         }
 
         .image-column:nth-child(3) .image-container:nth-child(even) {
+            margin-top: 30px; /* Move even images down */
+        }
+
+        /* Apply even more stagger for alternate images in both columns */
+        .image-column:nth-child(2) .image-container:nth-child(odd):nth-of-type(odd) {
+            margin-left: 30px; /* Shift odd images to the right */
+        }
+
+        .image-column:nth-child(3) .image-container:nth-child(even):nth-of-type(odd) {
             margin-left: 30px; /* Shift even images to the right */
         }
 
