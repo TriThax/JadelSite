@@ -98,4 +98,115 @@
             margin-left: 30px; /* Shift odd images to the right */
         }
 
-        .image-column:nth-c
+        .image-column:nth-child(3) .image-container:nth-child(even):nth-of-type(odd) {
+            margin-left: 30px; /* Shift even images to the right */
+        }
+
+        /* Footer styling */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #222;
+            color: #ffffff;
+            text-align: left;
+            padding: 10px;
+        }
+
+        /* Simple responsive design */
+        @media screen and (max-width: 700px) {
+            .main-container {
+                flex-direction: column;
+            }
+
+            .content, .image-column {
+                width: 100%;
+            }
+
+            .footer {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Main container with 3 columns -->
+<div class="main-container">
+
+    <!-- First column for text -->
+    <div class="content">
+        <h1>Baohua Luo</h1>
+        <p class="series-description">Serie La Mer</p>
+        <p>L'œuvre évoque un océan vivant et vibrant. Le bleu des ailes des magnifiques papillons du Brésil domine la composition. La lumière du soleil se pose sur la surface de l'eau, et dans les eaux peu profondes où les jeux de lumière et d'ombre se mêlent, on perçoit l'interaction entre la lumière et le mouvement des vagues, semblable à la danse discrète des micro-organismes au sein de l'océan. Les jeux de lumière et d'ombre respirent avec la toile, créant une harmonie fluide et vivante.</p>
+    </div>
+
+    <!-- Second column for image containers -->
+    <div class="image-column">
+        <div class="image-container">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3258.jpg" alt="Image 1">
+        </div>
+        <div class="image-container">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3262.jpg" alt="Image 2">
+        </div>
+        <div class="image-container">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3275.jpg" alt="Image 3">
+        </div>
+        <div class="image-container">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3283.jpg" alt="Image 4">
+        </div>
+        <div class="image-container">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3309.jpg" alt="Image 5">
+        </div>
+        <div class="image-container">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3321.jpg" alt="Image 6">
+        </div>
+        <div class="image-container">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3330.jpg" alt="Image 7">
+        </div>
+        <div class="image-container">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3332.jpg" alt="Image 8">
+        </div>
+    </div>
+
+    <!-- Third column for image containers -->
+    <div class="image-column">
+        <div class="image-container">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3335.jpg" alt="Image 9">
+        </div>
+        <div class="image-container">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3339.jpg" alt="Image 10">
+        </div>
+        <div class="image-container">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3482.jpg" alt="Image 11">
+        </div>
+        <div class="image-container">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3524.jpg" alt="Image 12">
+        </div>
+        <div class="image-container">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3540.jpg" alt="Image 13">
+        </div>
+        <div class="image-container">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3546.jpg" alt="Image 14">
+        </div>
+        <div class="image-container">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3560.jpg" alt="Image 15">
+        </div>
+        <div class="image-container">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3589.jpg" alt="Image 16">
+        </div>
+        <div class="image-container">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3627.jpg" alt="Image 17">
+        </div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>Image courtesy of the artist, © 2024.</p>
+</div>
+
+</body>
+</html>
