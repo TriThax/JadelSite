@@ -44,7 +44,7 @@
 
         .image-container {
             width: 100%; /* Images take up full width of the column */
-            margin-bottom: 110px; /* Increased space between images by 30px more */
+            margin-bottom: 130px; /* Increased space between images by 20px more */
             transition: all 0.3s ease; /* Smooth transition for any positioning changes */
         }
 
@@ -70,6 +70,23 @@
 
         .image-column:nth-child(3) .image-container:nth-child(even):nth-of-type(odd) {
             margin-left: 30px; /* Shift even images to the right */
+        }
+
+        /* Add variation to image sizes */
+        .image-column:nth-child(2) .image-container:nth-child(odd) img {
+            height: 70%; /* Make odd images in the second column smaller */
+        }
+
+        .image-column:nth-child(2) .image-container:nth-child(even) img {
+            height: 80%; /* Make even images in the second column slightly bigger */
+        }
+
+        .image-column:nth-child(3) .image-container:nth-child(odd) img {
+            height: 90%; /* Make odd images in the third column larger */
+        }
+
+        .image-column:nth-child(3) .image-container:nth-child(even) img {
+            height: 75%; /* Make even images in the third column smaller */
         }
 
         /* Footer styling */
