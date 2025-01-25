@@ -54,9 +54,26 @@
             display: block;
         }
 
-        /* Adjust size of images in the first column */
+        /* Adjust specific images as per instructions */
+
+        /* First column - Lower image 1 by 200px */
         .image-column:nth-child(1) .image-container:nth-child(1) {
-            margin-top: 130px; /* Lower the first image in the first column */
+            margin-top: 200px; /* Lower first image in first column */
+        }
+
+        /* Second column - Lower the first image by 400px */
+        .image-column:nth-child(2) .image-container:nth-child(1) {
+            margin-top: 400px; /* Lower the first image in the second column */
+        }
+
+        /* Increase the size of image 11 by 30% */
+        .image-column:nth-child(3) .image-container:nth-child(11) img {
+            width: 130%; /* 30% larger */
+        }
+
+        /* Lower image 17 by 200px */
+        .image-column:nth-child(3) .image-container:nth-child(17) {
+            margin-top: 200px; /* Lower image 17 by 200px */
         }
 
         /* Vary the image size from 50% to 100% */
@@ -194,19 +211,4 @@
             <img src="./DesignObjet/baohua/La Mer/2A6A3560.jpg" alt="Image 15">
         </div>
         <div class="image-container">
-            <img src="./DesignObjet/baohua/La Mer/2A6A3589.jpg" alt="Image 16">
-        </div>
-        <div class="image-container">
-            <img src="./DesignObjet/baohua/La Mer/2A6A3627.jpg" alt="Image 17">
-        </div>
-    </div>
-
-</div>
-
-<!-- Footer -->
-<div class="footer">
-    <p>Image courtesy of the artist, © 2024.</p>
-</div>
-
-</body>
-</html>
+            <img src="./DesignObjet/baohua/La Mer/
