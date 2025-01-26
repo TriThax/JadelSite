@@ -168,15 +168,27 @@
 <!-- Image containers on the right -->
 <div class="image-containers">
     <div class="image-container" style="margin-top: 40px; margin-left: 20px;">
-        <img src="./DesignObjet/baohua/Montagne/2A6A3314.jpg" alt="Image 1">
-        <img src="./DesignObjet/baohua/Montagne/2A6A3591.jpg" alt="Image 2">
-        <img src="./DesignObjet/baohua/Montagne/2A6A3593.jpg" alt="Image 3">
-        <img src="./DesignObjet/baohua/Montagne/2A6A3597.jpg" alt="Image 4">
-    </div>
+
+            <img src="./DesignObjet/baohua/La Mer/2A6A3258.jpg" alt="Image 1">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3262.jpg" alt="Image 2">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3275.jpg" alt="Image 3">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3283.jpg" alt="Image 4">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3309.jpg" alt="Image 5">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3321.jpg" alt="Image 6">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3330.jpg" alt="Image 7">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3332.jpg" alt="Image 8">
     <div class="image-container" style="margin-top: 20px; margin-left: 20px;">
-        <img src="./DesignObjet/baohua/Montagne/2A6A3666.jpg" alt="Image 5">
-        <img src="./DesignObjet/baohua/Montagne/2A6A3669.jpg" alt="Image 6">
-        <img src="./DesignObjet/baohua/Montagne/2A6A3673.jpg" alt="Image 7">
+
+            <img src="./DesignObjet/baohua/La Mer/2A6A3335.jpg" alt="Image 9">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3339.jpg" alt="Image 10">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3482.jpg" alt="Image 11">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3524.jpg" alt="Image 12">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3540.jpg" alt="Image 13">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3546.jpg" alt="Image 14">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3560.jpg" alt="Image 15">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3589.jpg" alt="Image 16">
+            <img src="./DesignObjet/baohua/La Mer/2A6A3627.jpg" alt="Image 17">
+
     </div>
 </div>
 
