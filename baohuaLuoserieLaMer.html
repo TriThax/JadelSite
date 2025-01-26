@@ -90,6 +90,11 @@
         .image-column:nth-child(3) .image-container:nth-child(8) {
             margin-top: 200px; /* Move the last image much lower */
         }
+
+        .image-column:nth-child(3) .image-container:nth-child(7) {
+            margin-top: 200px; /* Move the last image much lower */
+            margin-bottom: 50px;
+        }
         
         /* Column 3 - Make image 11 bigger */
         .image-column:nth-child(3) .image-container:nth-child(3) img {
@@ -135,7 +140,36 @@
             padding: 10px;
         }
 
-        /* Simple responsive design */
+        /* Header styles */
+        .header {
+            position: fixed;
+            width: 100%;
+            color: black;
+            background: transparent;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .header a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-family: Helvetica, sans-serif;
+            padding: 0 10px;
+        }
+        /* Navigation link styles */
+        .header .right a {
+            cursor: pointer;
+            text-decoration: none; /* Removes underline by default */
+            color: rgb(0, 0, 0); /* Set the text color */
+            padding: 5px; /* Adds some padding around the links */
+        }
+        /* Hover effect */
+        .header .right a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
         @media screen and (max-width: 700px) {
             .main-container {
                 flex-direction: column;
@@ -152,6 +186,16 @@
     </style>
 </head>
 <body>
+
+<!-- Header with navigation links -->
+<div class="header">
+    <a href="index.html" class="left">Home</a>
+    <div class="right">
+        <a href="bio.html">Bio</a>
+        <a href="archive.html">Archive</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
 
 <!-- Main container with 3 columns -->
 <div class="main-container">
