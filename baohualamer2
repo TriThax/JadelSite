@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Jadel</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(255, 255, 255);
+            height: 100%;
+            font-family: Helvetica, sans-serif;
+        }
+
+        .header {
+            position: fixed;
+            width: 100%;
+            color: black;
+            background: transparent;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .header a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-family: Helvetica, sans-serif;
+        }
+
+        .header .right a {
+            cursor: pointer;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            padding: 5px;
+        }
+
+        .header .right a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            width: 22%;
+            margin: 0;
+            padding-top: 40px;
+            padding-left: 30px;
+        }
+
+        .content h1, .content h2, .content p {
+            font-weight: normal;
+        }
+
+        .content h1 {
+            font-size: 16px;
+            padding-bottom: 0.5em;
+            color: rgb(0, 0, 0);
+        }
+
+        .content .series-description {
+            font-size: 12px;
+            line-height: 1;
+            margin-top: 0;
+            margin-bottom: 1em;
+            text-align: left;
+            font-style: italic;
+        }
+
+        /* Main content container with 2 image containers */
+        .image-containers {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            margin-left: 40%;
+            position: relative;
+            height: 100vh;
+            top: 0;
+        }
+
+        .image-container {
+            width: 48%; /* Each container takes up 48% of the width */
+            position: relative;
+            margin-top: 20px; /* Adjust top margin of images */
+        }
+
+        /* Control the images' margins within the containers */
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-left: 20px; /* Left margin for the images */
+            margin-bottom: 30px; /* Add space between the images */
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #222;
+            color: #ffffff;
+            text-align: left;
+            padding-left: 10px;
+            font-size: 12px;
+            z-index: 1000;
+            margin: 1;
+            line-height: 1;
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .content {
+                width: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 40px;
+                padding-bottom: 60px;
+                box-sizing: border-box;
+            }
+
+            .footer {
+                width: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
+                box-sizing: border-box;
+                font-size: 6px;
+            }
+
+            .image-containers {
+                flex-direction: column;
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .image-container {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .image-container img {
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <a href="archive.html" class="left"><span class="arrow">⟵</span></a>
+    <div class="right">
+        <a href="index.html">Info /</a>
+        <a href="archive.html">Archive /</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+
+<div class="content">
+    <h1>Baohua Luo</h1>
+    <p class="series-description">Serie Montagne</p>
+    <p>Cette œuvre rend hommage à la puissance et à la vitalité de la nature. Inspiré par les courbes majestueuses des montagnes, l'artiste a conçu une peinture à partir de pigments minéraux faits maison, soumis à une cuisson à haute température (plus de 1000°C). Le résultat est une matière lumineuse, rappelant la pierre des montagnes réelles, dont l'éclat capte la lumière de manière saisissante. L'œuvre dialogue avec la nature par ses propriétés uniques, résistant aux intempéries et aux épreuves du temps, même en extérieur. L'artiste, après vingt ans de recherche, a réussi à conférer à ce pigment minéral un pouvoir de résistance qui lui permet de se confronter à la force même de la nature.</p>
+</div>
+
+<!-- Image containers on the right -->
+<div class="image-containers">
+    <div class="image-container" style="margin-top: 40px; margin-left: 20px;">
+        <img src="./DesignObjet/baohua/Montagne/2A6A3314.jpg" alt="Image 1">
+        <img src="./DesignObjet/baohua/Montagne/2A6A3591.jpg" alt="Image 2">
+        <img src="./DesignObjet/baohua/Montagne/2A6A3593.jpg" alt="Image 3">
+        <img src="./DesignObjet/baohua/Montagne/2A6A3597.jpg" alt="Image 4">
+    </div>
+    <div class="image-container" style="margin-top: 20px; margin-left: 20px;">
+        <img src="./DesignObjet/baohua/Montagne/2A6A3666.jpg" alt="Image 5">
+        <img src="./DesignObjet/baohua/Montagne/2A6A3669.jpg" alt="Image 6">
+        <img src="./DesignObjet/baohua/Montagne/2A6A3673.jpg" alt="Image 7">
+    </div>
+</div>
+
+<div class="footer">
+    <p>Image courtesy of the artist, © 2024.</p>
+</div>
+
+</body>
+</html>
