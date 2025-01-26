@@ -63,7 +63,7 @@
             margin-top: 350px; /* First image in column 1 */
         }
 
-        .image-column:nth-child(1) .image-container:nth-child(n+2) {
+        .image-column:nth-child(1) .image-container:nth-child(n2) {
             margin-top: 120px; /* Other images in column 1 */
         }
 
@@ -76,31 +76,71 @@
         .image-column:nth-child(2) .image-container:nth-child(2) {
             margin-top: 70px;  /* Image 2 in column 2 */
         }
+        .image-column:nth-child(2) .image-container:nth-child(3) {
+            margin-top: 70px;  /* Image 3 in column 2 */
+        }
 
+        .image-column:nth-child(2) .image-container:nth-child(4) {
+            margin-top: 70px;  /* Image 4 in column 2 */
+        }
         .image-column:nth-child(2) .image-container:nth-child(5) {
             margin-top: 50px;   /* Smaller margin-top for Image 5 */
             margin-left: 20%;   /* Push Image 5 to the right */
         }
+        
+        .image-column:nth-child(2) .image-container:nth-child(6) {
+            margin-top: 70px;  /* Image 6 in column 2 */
+        }
+        
+        .image-column:nth-child(2) .image-container:nth-child(7) {
+            margin-top: 70px;  /* Image 7 in column 2 */
+        }
+
         .image-column:nth-child(2) .image-container:nth-child(8) {
             margin-top: 150px;   /* Smaller margin-top for Image 5 */
-        }
-        /* Column 2 - Adjust other images */
-        .image-column:nth-child(2) .image-container:nth-child(n+3):nth-child(-n+4) {
-            margin-top: 100px;
         }
 
         /* Column 3 - Last image much lower (500px down) */
         .image-column:nth-child(3) .image-container:nth-child(9) {
-            margin-top: 20px; /* Move the last image much lower */
+            margin-top: 20px; /* Image 17 Move the last image much lower */
         }
         .image-column:nth-child(3) .image-container:nth-child(8) {
-            margin-top: 100px; /* Move the last image much lower */
+            margin-top: 100px; /* Image 16 Move the last image much lower */
         }
 
         .image-column:nth-child(3) .image-container:nth-child(7) {
-            margin-top: 200px; /* Move the last image much lower */
+            margin-top: 200px; /* Image 15Move the last image much lower */
             margin-bottom: 50px;
         }
+
+        /* Column 3 - Last image much lower (500px down) */
+        .image-column:nth-child(3) .image-container:nth-child(6) {
+            margin-top: 20px; /* Image 14 Move the last image much lower */
+        }
+        .image-column:nth-child(3) .image-container:nth-child(5) {
+            margin-top: 100px; /* Image 13 Move the last image much lower */
+        }
+
+        .image-column:nth-child(3) .image-container:nth-child(4) {
+            margin-top: 200px; /* Image 12Move the last image much lower */
+            margin-bottom: 50px;
+        }
+
+
+        .image-column:nth-child(3) .image-container:nth-child(3) {
+            margin-top: 20px; /* Image 11 Move the last image much lower */
+        }
+        .image-column:nth-child(3) .image-container:nth-child(2) {
+            margin-top: 100px; /* Image 10 Move the last image much lower */
+        }
+
+        .image-column:nth-child(3) .image-container:nth-child(1) {
+            margin-top: 200px; /* Image  9 Move the last image much lower */
+            margin-bottom: 50px;
+        }
+
+
+
         
         /* Column 3 - Make image 11 bigger */
         .image-column:nth-child(3) .image-container:nth-child(3) img {
