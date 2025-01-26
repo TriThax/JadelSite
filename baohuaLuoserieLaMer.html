@@ -38,6 +38,7 @@
             flex-direction: column; /* Stack images vertically */
             justify-content: flex-start;
             position: relative;
+            margin-top: 50px;
         }
 
         .image-column:nth-child(2) {
@@ -48,6 +49,7 @@
             width: 100%; /* Images take up full width of the column */
             margin-bottom: 150px; /* Increased space between images */
             transition: all 0.3s ease; /* Smooth transition for any positioning changes */
+            margin-top: 50px;
         }
 
         .image-container img {
@@ -58,7 +60,7 @@
 
         /* Column 1 - Adjust first image and others */
         .image-column:nth-child(1) .image-container:nth-child(1) {
-            margin-top: 300px; /* First image in column 1 */
+            margin-top: 350px; /* First image in column 1 */
         }
 
         .image-column:nth-child(1) .image-container:nth-child(n+2) {
@@ -79,7 +81,9 @@
             margin-top: 50px;   /* Smaller margin-top for Image 5 */
             margin-left: 20%;   /* Push Image 5 to the right */
         }
-
+        .image-column:nth-child(2) .image-container:nth-child(8) {
+            margin-top: 200px;   /* Smaller margin-top for Image 5 */
+        }
         /* Column 2 - Adjust other images */
         .image-column:nth-child(2) .image-container:nth-child(n+3):nth-child(-n+4) {
             margin-top: 100px;
