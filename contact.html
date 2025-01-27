@@ -11,32 +11,26 @@
         height: 100%;
       }
       .header {
-  position: fixed;  /* 固定定位 */
-  top: 0;  /* 确保头部在页面顶部 */
-  left: 0;  /* 确保头部左对齐 */
-  width: 100%;  /* 宽度为100% */
-  background: transparent;  /* 背景透明，或你可以设置其他颜色 */
-  color: #000000;  /* 文字颜色为黑色 */
-  z-index: 1000;  /* 确保头部在其他元素之上 */
-  display: flex;  /* 使用flex布局 */
-  justify-content: space-between;  /* 左右两侧元素分布 */
-  padding: 10px;  /* 给头部添加一定的内边距 */
-  box-sizing: border-box;  /* 确保padding不会影响元素的实际宽度 */
-}
+        position: fixed;
+        width: 100%;
+        color: black;
+        background: transparent;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        box-sizing: border-box;
+      }
       .header a {
-        color: #000000;
+        color: rgb(0, 0, 0);
         text-decoration: none;
         font-family: Helvetica , sans-serif;
       }
-        
          /* Navigation link styles */
-        .header .left .arrow {
-  color: #000000;  /* 箭头颜色为黑色 */
-}
     .header .right a {
       cursor: pointer;
       text-decoration: none; /* Removes underline by default */
-      color: #000000; /* Set the text color */
+      color: rgb(0, 0, 0); /* Set the text color */
       padding: 5px; /* Adds some padding around the links */
     }
     
