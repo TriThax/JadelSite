@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Jadel</title>
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+      }
+      .header {
+        position: fixed;
+        width: 100%;
+        color: black;
+        background: transparent;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .header a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-family: Helvetica , sans-serif;
+      }
 
+      .content {
+          width: 50%; /* Adjusted for space allocation between text and video */
+          margin: 0px;
+          padding-top: 40px;
+          padding-left: 30px;
+          display: inline-block; /* Allow content and video to align next to each other */
+      }
+
+      .footer {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          margin: 0px;
+          background-color: #222;
+          color: #ffffff;
+          text-align: left;
+          padding-left: 10px;
+          font-size: 12px;
+          z-index: 1000;
+          display: flex;
+          justify-content: space-between;
+          box-sizing: border-box;
+      }
+
+      .cv-link {
+          color: rgb(0, 0, 0);
+          padding: 8px 0px;
+          text-decoration: underline;
+          font-weight: normal;
+          display: inline-block;
+          margin-top: 0px;
+          cursor: pointer;
+          border-radius: 0px;
+          transition: background-color 0.3s;
+          font-size: 14px;
+      }
+
+      .cv-link:hover {
+          background-color: #33333300;
+          text-decoration: underline;
+      }
+
+      video {
+          width: 45%; /* Video width adjusted */
+          height: auto;
+          display: inline-block;
+          vertical-align: top; /* Align video on the right */
+          margin-top: 50px;
+      }
+
+      @media only screen and (max-width: 700px) {
+          .content, video {
+              width: 100%; /* Full width for smaller screens */
+              position: relative;
+              display: block; /* Stack the content and video vertically on small screens */
+          }
+      }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="left"><span class="arrow">⟵</span></a>
+        <div class="right">
+            <a href="bio.html">Info /</a>  
+            <a href="archive.html"> Artist /</a>
+            <a href="press.html"> Press /</a>  
+            <a href="contact.html"> Contact</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Galerie Jadel</h1>
+        <p>Art Gallery<br>Shanghai, China</p>
+        <p>Jadel is an art gallery located in Shanghai that champions contemporary artists who push their own boundaries, constantly research and develop new materials, work across media and disciplines, and engage with the vital concerns of natural beauty. </p>
+        <p>We value collaboration, experimentation, and the belief that art makes experiencing other imaginaries possible.</p>
+        <p>We encourage artists to explore different materials and mediums, and regularly organize material research activities. We firmly believe that nature is a source of inspiration and beauty, providing new creative insights and ideas for diverse audiences. </p>
+        <p>Gallery Jadel is a polyvalent gallery space, provides a new window and platform for artists with an international vision stewarded by Baohua LUO.</p>
+        
+    </div>
+
+    <!-- Directly embedded video aligned to the right -->
+    <video controls autoplay muted>
+        <source src="./DesignObjet/3567.MP4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</body>
+</html>
